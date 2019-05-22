@@ -29,15 +29,45 @@
                 print("<br/>");
             }
             
-            // Declare array
-            $gpas = (
+            // Associative array
+            $gpas = array(
                     "Smith" => 3.25,
                     "Johnson" => 3.1,
                     "Simpson" => 1.6,
                     "Musk" => 4.0
-                )
+                );
+            
+            print("<br/>");
+            print("Eric Smith has a gpa of " . $gpas["Smith"]);
+            print("<br/>");
             
             
+            //Multi Dimensional Arrays
+            
+            $teams = array(
+                    "Yankees" => array(
+                            "Rivera",
+                            "Jeter",
+                            "Granderson",
+                            "Sabathia",
+                            "Gardner"
+                        ),
+                    "Mets" => array(
+                            "Dickey",
+                            "Acosta",
+                            "Pelfrey"
+                        ),
+                    "Red Sox" => array(
+                            "Ortiz",
+                            "Bard",
+                            "Buckholz",
+                            "Beckett"
+                        )
+                );
+                
+                echo($teams['Red Sox'][2]);
+                print("<br/>");
+                echo($teams['Yankees'][1]);
         ?>
         <form>
                 <input type="button" value="Click me!" onclick="window.location.href='https://www.google.com'" />
