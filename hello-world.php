@@ -80,10 +80,10 @@
                 
                 // Conditionals
                 
-            $age = 16;
+            $age = 28;
             $citizen = true;
             
-            if($age >= 18 && $citizen == true) {
+            if($age >= 18 && $citizen) {
                 print("<br/>");
                 print($age . " You are old enough to vote!");
             } else {
@@ -92,9 +92,81 @@
             }
                 
                 
+                print("<br/>");
+                print("<br/>");
+                
+                // Switch Case Break
+                
+                print("<strong>Switch Case Break</strong>");
+                print("<br/>");
+                
+                $grade = 'A';
+                
+                switch($grade) {
+                    case 'A':
+                    case 'a': 
+                        print("That's a great grade!");
+                    break;
+                    
+                    case 'B': 
+                    case 'b':
+                        print("B is above average");
+                    break;
+                    
+                    case 'C':
+                    case 'c':
+                        print("C is an average grade");
+                    break;
+                    
+                    case 'D':
+                    case 'd':
+                        print("D is a low passing grade");
+                    break;
+                    
+                    case 'F':
+                    case 'f':
+                        print("F is a failing grade.  You must retake the course");
+                    break;
+                    
+                    default: print("Letter grade not recognized!");
+                }
+                
+                print("<br/>");
+                print("<br/>");
+                
+                print("<strong>Ternary Operator</strong>");
+                print("<br/>");
+                
+                $voteString = ($age >= 18) ? "Can Vote" : "Can't Vote";
+                
+                print $voteString;
+                
+                $testScore = 67;
+                
+                $pass = ($testScore >= 60) ? true : false;
+                
+                print("<br/>");
+                print($pass);
+                
+                
+                print("<br/>");
+                print("<br/>");
+                
+                print("<strong>Loops</strong>");
+                print("<br/>");
+                
+                $i = 0;
+                while($i < 10){
+                    print($i);
+                    print("<br/>");
+                    $i++;
+                }
+                
         ?>
         
-        <h1>Please provide the following info</h1>
+        <h1>Forms</h1>
+        <br/>
+        <h2>Please provide the following info</h2>
         <form action="formProcess.php" method="get">
                 <!--<input type="button" value="Click me!" onclick="window.location.href='https://www.google.com'" />-->
                 <p>What is your dog's name?
