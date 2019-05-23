@@ -152,6 +152,8 @@
                 print("<br/>");
                 print("<br/>");
                 
+                //Loops
+                
                 print("<strong>Loops</strong>");
                 print("<br/>");
                 
@@ -160,6 +162,26 @@
                     print($i);
                     print("<br/>");
                     $i++;
+                }
+                
+                
+                $x = 0;
+                while($x < count($family)) {
+                    print($family[$x]);
+                    print("<br/>");
+                    $x++;
+                }
+                
+                $y = 0;
+                do{
+                    print($y);
+                    print("<br/>");
+                    $y++;
+                } while ($y < 11);
+                
+                
+                for($i=0; $i<10; $i++) {
+                    print($i . "<br/>");
                 }
                 
         ?>
