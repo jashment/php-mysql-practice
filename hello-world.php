@@ -184,6 +184,82 @@
                     print($i . "<br/>");
                 }
                 
+                print("<br/>");
+                print("<br/>");
+                
+                //Includes
+                
+                print("<strong>Includes</strong>");
+                print("<br/>");
+                
+                include_once("include.php");
+                
+                
+                
+                print("<br/>");
+                print("<br/>");
+                
+                //Functions
+                
+                print("<strong>Functions</strong>");
+                print("<br/>");
+                require_once("functions.php");
+                
+                greetings();
+                
+                print("<br/>");
+                
+                repeat();
+                
+                print("<br/>");
+                
+                dogAgeCalc(7);
+                
+                print("<br/>");
+                
+                greet2("Bacon");
+                
+                print("<br/>");
+                
+                adding(3, 10);
+                
+                print("<br/>");
+                
+                print("The value of 3.14115924 doubled is " . doubled(3.141592654));
+                
+                $resultDoubled = doubled(36.59);
+                print("<br/>");
+                
+                print("The result is: " . $resultDoubled);
+                
+                
+                print("<br/>");
+                print("<br/>");
+                
+                //File I/O
+                
+                print("<strong>File I/O</strong>");
+                print("<br/>");
+                
+                $file = "names.txt";
+                $fp = fopen($file, 'r');
+                // $string = fread($fp, filesize($file));
+                // fclose($fp);
+                
+                // $string = file_get_contents($file, true); another way of doing the above.
+                
+                $string = ""; // another way of getting something from a file.
+                while(!feof($fp)){
+                    $string .= fgets($fp, 256);
+                    $string .= "<br/>";
+                    
+                }
+                
+                print($string);
+                
+                
+                
+                
         ?>
         
         <h1>Forms</h1>
